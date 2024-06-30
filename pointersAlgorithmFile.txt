@@ -1,0 +1,75 @@
+Goals
+ a. take user input (decimals and names)
+ b. sort numbers based on size
+ c. make sure numbers aren't negative (validation function)
+ d. print out array of 3 numbers and one name, then 2 numbers and one name.
+
+Input
+ 1. Paste code given by teacher (see on Canvas)
+
+ 2. make the getInput(double array[], int arraySize){ function take an array and the size of the array
+    a. use a for loop to iterate through array
+	for (int i = 0; i < arraySize; ++i) {
+    b. add user input to array (loops til full)
+	array[i] = num; //populate array
+
+3. create void validateInput(double array[], int arraySize)
+    a. loop through array, if any value in the array is negative (array[i] < 0), keep asking for user input
+	getInput(arr1, ARR1_MAX); //keeps asking until all numbers are positive
+            getInput(arr2, ARR2_MAX);
+
+4. create void sort(double array[], int arraySize) { //bubble sort
+    a. use code snippet
+	for (i = 0; i < arraySize - 1; i++) {
+    		for (j = 0; j < arraySize - 1; j++) {
+        		if (arr[j] > arr[j+1] {
+            			// Swap elements
+        		} 
+    		}
+	}
+    b. swap if (array[j] > array[j+1])
+	store value of one number, check against other number
+	if the number is smaller, swap positions
+		double store; 
+                store = array[j]; //store values first to allow them to be moved
+                array[j] = array[j+1]; //similar concept to swap function
+                array[j+1] = store;
+
+5. create swap function using pointers
+	void swap(double *num1, double *num2) //double instead of int
+	    store = *num1; //store the value of number 1
+    	    *num1 = *num2; //number 2 replaces number 1
+            *num2 = store; //number one put where two was
+
+6. create a function to print out arrays
+	void print(double array[], int arraySize){
+	 //loop through array using for loop and print:
+		cout << array[i] << " "; //space in between
+
+Output:
+
+7. call functions int main(){
+    a. ask for two names from user
+    b. ask user for 3 numbers and then 2 numbers to populate arr1 and arr2
+    c.validate the input using validation function for each array
+	     validateInput(arr1, ARR1_MAX); //and arr2
+    d. use sort function to sort numbers given
+
+8. print output
+    a. print out each name
+    b. print their respective arrays
+	    cout << firstName << endl;
+    	    print(arr1, ARR1_MAX);
+    
+            cout << secondName <<endl;
+            print(arr2, ARR2_MAX);
+
+
+	
+
+		
+
+
+		
+   
+	
